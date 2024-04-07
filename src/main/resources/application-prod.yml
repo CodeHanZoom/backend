@@ -17,9 +17,6 @@ spring:
       ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    show-sql: true
-    properties:
-      '[hibernate.format_sql]': true
 
   mail:
     host: smtp.gmail.com
@@ -50,7 +47,6 @@ jwt:
   refresh:
     expiration: 1209600000 #  (1000L(ms -> s) * 60L(s -> m) * 60L(m -> h) * 24L(h -> 하루) * 14(2주))
     header: "Authorization-refresh"
-
 
 logging:
   level:
