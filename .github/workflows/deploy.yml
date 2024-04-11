@@ -72,5 +72,6 @@ jobs:
           pip install pandas
           pip install ultralytics            
           pip install --upgrade distro-info
-          pip install -y argparse
+          pip install argparse
+          pip install -r requirements.txt
           nohup python3 -u test.py --port 5001 &

@@ -15,6 +15,9 @@ import shutil
 PIL.Image.ANTIALIAS = PIL.Image.LANCZOS
 models = {}
 
+#sys.path.append('D:\test\flask\yolov5')
+DETECTION_URL = "/v1/object-detection/<model>"
+
 app = Flask(__name__)
 
 # input = { "file_name" : "{id}_{YYYYMMDD}"}
@@ -126,5 +129,6 @@ if __name__ == '__main__':
 
     for m in opt.model:
         models[m] = torch.hub.load("ultralytics/yolov5", 'custom', './runs/train/before_addplastic/weights/best.pt', force_reload=True, skip_validation=True)
+
 
     app.run(host="0.0.0.0", port=opt.port)
