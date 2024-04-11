@@ -72,6 +72,6 @@ jobs:
           pip install pandas
           pip install ultralytics            
           pip install --upgrade distro-info
-          cd backend/yolov5/
+          cd ./yolov5/
           pip install -y argparse
           nohup python3 -u test.py --port 5001 &
