@@ -64,3 +64,6 @@ cloud:
 logging:
   level:
     '[org.springframework.boot.web]': INFO
+
+flask:
+  domain: ${flask.url}
