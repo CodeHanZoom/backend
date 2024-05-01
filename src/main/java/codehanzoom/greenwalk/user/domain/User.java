@@ -95,16 +95,4 @@ public class User {
 //        }
         this.totalPoint  = restPoint;
     }
-
-    public void addtotalStep(int step){this.totalStep += step;}
-    public void removetotalStep(int step){this.totalStep -= step;}
-
-    public void addtotalDonation(int donation){this.totalDonation += donation;}
-    public void removetotalDonation(int donation){this.totalDonation -= donation;}
-
-    public void addtotalTrashCount(int trashCount){this.totalTrashCount += trashCount;}
-    public void removetotalTrashCount(int trashCount){this.totalTrashCount -= trashCount;}
-
-    public void addtotalWalkingDistance(float walkingDistance){this.totalWalkingDistance += walkingDistance;}
-    public void removetotalWalkingDistance(float walkingDistance){this.totalWalkingDistance -= walkingDistance;}
 }

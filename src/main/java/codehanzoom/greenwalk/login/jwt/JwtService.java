@@ -64,11 +64,10 @@ public class JwtService {
 
     //Token이 유효한지 반환하는 메서드
     public boolean isTokenValid(String Token){
-        try{
-            log.info("Token : " + Token);
+        try {
             JWT.require(Algorithm.HMAC512(secretKey)).build().verify(Token);
             return true;
-        }catch(Exception e){
+        }catch(Exception e) {
             log.error("유효하지 않은 토큰입니다. {}", e.getMessage());
             return false;
         }
